@@ -134,6 +134,10 @@ a {
     margin-bottom: 4rem;
 }
 
+.access-clipboard-anywhere {
+    margin-top: 5rem;
+}
+
 .access-clipboard-anywhere img {
     margin: 4rem 0 8rem 0;
 }
@@ -148,7 +152,7 @@ a {
 }
 
 .keep-track-info {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 
 .keep-track-info .section-sub-title {
@@ -193,11 +197,15 @@ a {
     margin-top: 8rem;
     width: 80%;
     height: 24rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 .clipboard-ios-and-mac .section-title {
     margin-bottom: 1rem;
+}
+
+.clipboard-ios-and-mac .download-cyan-button-area{
+    margin-top: 4rem;
 }
 
 .main-footer {
@@ -352,12 +360,4 @@ a {
        margin: -6rem 0 0 70%
    }
    
-   
-
 }
-
-
-
-
-
-
