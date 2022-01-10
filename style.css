@@ -1,0 +1,362 @@
+/*general css rules*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', Arial, sans-serif, Helvetica;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+ul li a, a i {
+    color: var(--dark-grayish-blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+.download-cyan-button, .download-blue-button {
+    color: white;
+    border-radius: 1.875rem;
+    padding: 0.85rem 22%;
+    font-weight: 600;  
+}
+
+.download-cyan-button {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 5px 10px hsla(171, 66%, 44%, 0.3);
+    border-bottom: 3px solid hsl(171, 67%, 37%);
+}
+
+.download-blue-button {
+    background-color: var(--light-blue);
+    box-shadow: 0 5px 10px hsla(233, 100%, 69%, 0.3);
+    border-bottom: 3px solid hsl(233, 61%, 57%)
+}
+
+.main-title {
+    font-size: 2.5rem;
+}
+
+.main-title, .section-title, .section-sub-title {
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+}
+
+.general-paragraph {
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.section-sub-title {
+    font-size: 1.5rem;
+}
+
+/*End of the general rules*/
+
+/*Active States*/
+
+.download-cyan-button:hover {
+    background-color: hsla(171, 66%, 44%, 0.9);
+}
+
+.download-blue-button:hover {
+    background-color: hsla(233, 100%, 69%, 0.9);
+}
+
+.footer-link-list li a:hover, .social-media-field a i:hover {
+    color: var(--strong-cyan);
+}
+
+/*CSS for real*/
+
+#main-container, .main-header, .main-content, .keep-tracks-of-your-snippets, .keep-tracks-bottom-field, .access-clipboard-anywhere, .supercharge-your-flow, .company-logo-images{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.main-header {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 10rem;
+}
+
+.main-header-content {
+    margin-top: 6rem;
+    width: 88%;
+    height: 30rem;
+}
+
+.main-header-content svg {
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    margin: 1.5rem 0 3rem 0;
+    line-height: 1.5;
+}
+
+.download-cyan-button-area {
+    margin: 2rem 0 3.5rem 0;
+}
+
+.keep-tracks-of-your-snippets {
+    margin-top: 8rem;
+    width: 94%;
+}
+
+.keep-track-top-content {
+    width: 80%;
+}
+
+.keep-track-top-content .section-title {
+    margin: 2rem 0;
+}
+
+.keep-track-top-content .general-paragraph {
+    margin-bottom: 4rem;
+}
+
+.access-clipboard-anywhere img {
+    margin: 4rem 0 8rem 0;
+}
+
+.keep-tracks-img img, .access-clipboard-anywhere img {
+    max-width: 90%;
+}
+
+.keep-tracks-text {
+    margin-top: 4rem;
+    width: 84%;
+}
+
+.keep-track-info {
+    margin-bottom: 4rem;
+}
+
+.keep-track-info .section-sub-title {
+    margin-bottom: 1.25rem;
+}
+
+.access-clipboard-anywhere-content {
+    width: 74%;
+}
+
+.access-clipboard-anywhere .section-title {
+    margin-bottom: 1.5rem;
+}
+
+.supercharge-your-flow-introduction{
+    width: 74%;
+    margin-bottom: 6rem;
+}
+
+.supercharge-your-flow-introduction .section-title {
+    margin-bottom: 2rem;
+}
+
+.supercharge-your-flow-img-and-text {
+    width: 78%;
+}
+
+.supercharge-your-flow-card, .supercharge-your-flow-card svg{
+    margin-bottom: 3rem;
+}
+
+.company-logo-section {
+    width: 100%;
+}
+
+.company-logo-images img {
+    margin-bottom: 3rem;
+}
+
+.clipboard-ios-and-mac {
+    margin-top: 8rem;
+    width: 80%;
+    height: 24rem;
+    padding-bottom: 4rem;
+}
+
+.clipboard-ios-and-mac .section-title {
+    margin-bottom: 1rem;
+}
+
+.main-footer {
+    padding: 1rem 0 2rem 0;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.main-footer img:first-child{
+    transform: scale(0.5);
+}
+
+.main-footer ul li {
+    margin-bottom: 1.75rem;
+}
+
+.social-media-field a i{
+    transform: scale(1.5);
+    margin: 1rem 0.75rem;
+}
+
+/*Media queries*/
+
+/*Supporting Galaxy Fold*/
+
+@media (max-width: 17.5rem) {
+
+    .download-cyan-button, .download-blue-button {
+        color: white;
+        border-radius: 1.875rem;
+        padding: 0.85rem 16%;
+        font-weight: 600;
+    }
+}
+
+/*Desktop version*/
+
+@media (min-width: 62.5rem) {
+
+    .download-cyan-button-area, .download-blue-button-area {
+        display: inline;
+    }
+
+    .download-cyan-button {
+        margin-right: 1%;
+    }
+
+    .download-cyan-button, .download-blue-button {
+        color: white;
+        border-radius: 1.875rem;
+        padding: 0.85rem 3rem;
+        font-weight: 600;  
+    }
+    
+    .main-header {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .main-header-content {
+        width: 60%;
+    }
+
+    .keep-tracks-bottom-field{
+        flex-direction: row;
+    }
+
+    .keep-tracks-img img {
+        max-width: 100%;
+        margin-left: -8rem;
+        width: 74rem;
+    }
+
+    .keep-track-info {
+        margin-left: 8%;
+        text-align: left;
+        width: 60%;
+    }
+
+    .access-clipboard-anywhere {
+        margin-top: 6rem;
+    }
+
+    .supercharge-your-flow-img-and-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .supercharge-your-flow-card {
+        width: 28%;
+    }
+
+    .supercharge-your-flow-card:first-child {
+        margin-top: -0.5rem;
+    }
+
+    .company-logo-images {
+        margin-top: 6rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .clipboard-ios-and-mac {
+        margin-top: 8rem;
+        width: 60%;
+        height: 14rem;
+        padding-bottom: 6rem;
+    }
+
+    .clipboard-ios-and-mac .general-paragraph {
+        margin-bottom: 4rem;
+    }
+
+    .main-footer img:first-child {
+        float: left;
+        margin-left: 8%;
+    }
+
+   .footer-link-list {
+       margin-top: 2rem;
+       display: grid;
+       grid-template-columns: repeat(3, 14%);
+       grid-row: repeat(2, 150px);
+   }
+
+   .footer-link-list li:first-child {
+       grid-row: 1 / 2;
+       grid-column: 1 / 2;
+   }
+
+   .footer-link-list li:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .footer-link-list li:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .footer-link-list li:nth-child(4) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .footer-link-list li:nth-child(5) {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+   .social-media-field {
+       display: block;
+       margin: -6rem 0 0 70%
+   }
+   
+   
+
+}
+
+
+
+
+
+
